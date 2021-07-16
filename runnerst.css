@@ -1,0 +1,68 @@
+/* #monkey{
+    display:none;
+} */
+#shoutout{
+    padding:50px; 
+    margin-top:140px;
+    background-color: rgb(38, 179, 160);
+    text-align: center;
+    border-radius:4px;
+
+}
+#shoutoutsec{
+    padding:50px; 
+    margin-top:140px;
+    background-color: rgb(38, 179, 160);
+    text-align: center;
+    border-radius:4px;
+}
+#scor,#Highscoreloc{
+    font-size: 25px;
+}
+#tab{
+    display:block;
+    text-align: center;
+    position: absolute;
+    top: 9%;
+    right: 50%;
+    border-radius: 4px;
+    background-color: rgb(38, 179, 160);
+    font-size: 22px;
+    color:ivory;
+    left:100px;
+}
+
+@media screen and (max-width:800px){
+    #MrMainBody{
+width:100%;
+Height:100%;
+    }
+    #shoutout,#shoutoutsec{
+        display:none;
+    }
+}
+@media screen and (orientation:portrait){
+    #monkey{
+        display:visible;
+    }
+    #shoutoutsec{
+        display:flex;
+        padding:50px; 
+    background-color: rgb(38, 179, 160);
+    text-align: center;
+    border-radius:4px;
+    font-family:'Courier New', Courier, monospace;
+    }
+    #tab{
+        display:none;
+    }
+    #shoutout{
+        display:none;
+    }
+    canvas{
+        display:none;
+        }
+}
+@media screen and (orientation:portrait){
+    
+}
