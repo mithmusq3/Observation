@@ -125,7 +125,7 @@ else {
 }
 function place(zran)
 {
-
+   console.log('logged in success');
     if(zran=='1')
          {
             b=2*x;
@@ -154,7 +154,7 @@ function drawholebf(){
 
     check1(x-(450*x/640),t,b,sid);    
     if((b==0)||(b<0)){
-        cancelAnimationFrame(boxf);      
+        cancelAnimationFrame(boxf);        
     }
 }
 
@@ -165,7 +165,7 @@ function drawholebb(){
     holebb.fillRect(sid+200,y+50,100,y+51);//third input here is painting repeatedly without clear the previous mark so its continuous  
     sid-=8;
     
-    if(sid==-200){
+    if(sid<=-230){
         cancelAnimationFrame(boxb);
         rand=Math.floor((Math.random()*2)+1);
         
@@ -192,7 +192,7 @@ function drawholeub(){
     holeub.fillRect(sid+200,0,100,y-120);
     sid-=8;
     
-    if(sid==-200){
+    if(sid<=-230){
         cancelAnimationFrame(boxb);
        
         rand=Math.floor((Math.random()*2)+1);
@@ -232,8 +232,9 @@ function check2(bx,by,ox,ox2)
 
 function gameover()
 {   
-    // document.getElementById('monkey').style.display= 'visible';
     document.getElementById('shoutout').style.display = 'visible';
+    document.getElementById('MrMainBody').style.overflow = 'auto';
+    document.getElementById('shoutoutsec').style.display = 'none';
     canvas.style.display = 'none';
     scor.innerHTML = 'Score :' + points;
     
