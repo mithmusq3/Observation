@@ -63,6 +63,12 @@ Height:100%;
         display:none;
         }
 }
-@media screen and (orientation:portrait){
-    
+@media screen and (orientation:landscape){
+    #shoutout{
+    padding:50px; 
+    background-color: rgb(38, 179, 160);
+    text-align: center;
+    border-radius:4px;
+
+}
 }
