@@ -31,16 +31,6 @@
     color:ivory;
     left:100px;
 }
-
-@media screen and (max-width:800px){
-    #MrMainBody{
-width:100%;
-Height:100%;
-    }
-    #shoutout,#shoutoutsec{
-        display:none;
-    }
-}
 @media screen and (orientation:portrait){
     #monkey{
         display:visible;
