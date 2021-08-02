@@ -65,7 +65,7 @@ if (pos%2=='0'){
          
            place('1');   
            forpoints=setInterval(()=>{points++; score.innerHTML="Score :"+points;},100);
-//            musq.play();
+           musq.play();
            musq.loop = true;
            }
         }
